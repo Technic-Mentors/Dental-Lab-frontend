@@ -58,9 +58,8 @@ export default function Addcategory() {
       cate.innerText = 'Category already exists';
       return;
     }
-  
     cate.innerText = '';
-  
+
     // Add the new category
     await fetch("http://localhost:8002/api/auth/category", {
       method: "POST",
