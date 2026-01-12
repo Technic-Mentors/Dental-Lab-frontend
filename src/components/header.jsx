@@ -24,107 +24,93 @@ function Header() {
   return (
     <>
       {/* Topbar Start */}
-      <div className="container-fluid  ps-5 pe-0 d-none d-lg-block bg-danger">
-        <div className="row gx-0 ">
-          <div className="col-md-6 text-center text-lg-start mb-2 mb-lg-0 ">
-            <div className="d-inline-flex align-items-center">
-           <div className="align-items-left">  
-              <small className="py-2">
-                <i className="fa fa-location-dot text-white" />
-                <span className="text-danger">&gt;</span>
-                <span className="text-white">
-                  9495 Page Avenue, #102 St. Louis, MO 63132
-                </span>
-              </small>
-           </div>
-           <div className="mx-5"></div>
-             <div className="align-items-center"> 
-              <h5 className="py-2">
-                <span className=" m-0 text-white">
-                Full-Service Certified Dental Lab (CDL)
-                </span>
-              </h5>
-             </div>
-            </div>
-          </div>
-          <div className="col-md-6 text-center text-lg-end">
-            <div className="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
-              <div className="me-3 pe-3 border-end py-2">
-                {/* <h5 className="m-0 text-white">
-                  <i className="fa fa-envelope-open me-2" />
-                  info@totaldentallab.com
-                </h5> */}
-                <Link
-                  // onClick={handleAppointActive}
-                  to="/login"
-                  className="btn bt-sm btn-secondary header_text"
-                >
-                  Login
-                </Link>
-                <Link
-                  // onClick={handleAppointActive}
-                  to="/signup"
-                  className="btn bt-sm btn-secondary header_text "
-                >
-                  Register
-                </Link>
-              </div>
+      <div className="container-fluid px-3 px-lg-5 bg-danger">
+  <div className="row align-items-center gy-2">
 
-              <div className="py-2">
-                <span className="m-0 h5 text-white">
-                  <i className="fa fa-phone me-2" />
-                  1 833 663 1156
-                  </span>
-                <a
-                  target="blank"
-                  style={{ borderRadius: 10, marginLeft: 8, marginTop: -6 }}
-                  className="btn btn-sm btn-primary btn-sm-square "
-                  href="https://www.facebook.com/TotalDL"
-                >
-                  <i
-                    style={{ fontSize: 20 }}
-                    className="fab fa-facebook-f fw-normal"
-                  />
-                </a>
-                <a
-                  target="blank"
-                  style={{ borderRadius: 10, marginLeft: 8, marginTop: -6 }}
-                  className="btn btn-sm btn-primary btn-sm-square"
-                  href="https://www.instagram.com/totaldl/"
-                >
-                  <i
-                    style={{ fontSize: 22 }}
-                    className="fab fa-instagram fw-normal"
-                  />
-                </a>
-                <a
-                  target="blank"
-                  style={{ borderRadius: 10, marginLeft: 8, marginTop: -6 }}
-                  className="btn btn-sm btn-primary btn-sm-square"
-                  href="https://www.linkedin.com/in/totaldl/"
-                >
-                  <i
-                    style={{ fontSize: 22 }}
-                    className="fab fa-linkedin fw-normal"
-                  />
-                </a>
-                <a
-                  target="blank"
-                  style={{ borderRadius: 10, marginLeft: 8, marginTop: -6 }}
-                  className="btn btn-sm btn-primary btn-sm-square"
-                  href="mailto:info@totaldentallab.com"
-                >
-                  <i
-                    style={{ fontSize: 22 }}
-                    className="fa fa-envelope fw-normal"
-                  />
-                  
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    {/* LEFT SECTION */}
+    <div className="col-12 col-lg-6 text-center text-lg-start">
+      <div className="d-flex flex-column flex-lg-row align-items-center align-items-lg-start ">
+
+        <small className="text-white">
+          <i className="fa fa-location-dot me-1" />
+          9495 Page Avenue, #102 St. Louis, MO 63132
+        </small>
+
+        <h6 className="m-0 text-white text-center text-lg-start">
+          Full-Service Certified Dental Lab (CDL)
+        </h6>
+
       </div>
+    </div>
+
+    {/* RIGHT SECTION */}
+    <div className="col-12 col-lg-6 text-center text-lg-end">
+      <div className="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center gap-2">
+
+        {/* Buttons */}
+        <div className="d-flex ">
+          <Link to="/login" className="btn btn-sm btn-secondary">
+            Login
+          </Link>
+          <Link to="/signup" className="btn btn-sm btn-secondary">
+            Register
+          </Link>
+        </div>
+
+        {/* Phone + Social */}
+<div className="d-flex align-items-center justify-content-center justify-content-lg-end">
+
+  <span className="text-white fw-semibold me-2">
+    <i className="fa fa-phone me-1" />
+    1 833 663 1156
+  </span>
+
+  <div className="d-flex">
+    <a
+      href="https://www.facebook.com/TotalDL"
+      target="_blank"
+      className="btn btn-primary btn-sm"
+      style={{ margin: 0, padding: "6px 8px", borderRadius: "6px 0 0 6px" }}
+    >
+      <i className="fab fa-facebook-f" style={{ fontSize: 16 }} />
+    </a>
+
+    <a
+      href="https://www.instagram.com/totaldl/"
+      target="_blank"
+      className="btn btn-primary btn-sm"
+      style={{ margin: 0, padding: "6px 8px", borderRadius: 0 }}
+    >
+      <i className="fab fa-instagram" style={{ fontSize: 16 }} />
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/totaldl/"
+      target="_blank"
+      className="btn btn-primary btn-sm"
+      style={{ margin: 0, padding: "6px 8px", borderRadius: 0 }}
+    >
+      <i className="fab fa-linkedin" style={{ fontSize: 16 }} />
+    </a>
+
+    <a
+      href="mailto:info@totaldentallab.com"
+      className="btn btn-primary btn-sm"
+      style={{ margin: 0, padding: "6px 8px", borderRadius: "0 6px 6px 0" }}
+    >
+      <i className="fa fa-envelope" style={{ fontSize: 16 }} />
+    </a>
+  </div>
+
+</div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
       {/* Topbar End */}
       {/* Navbar Start */}
       <nav className="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
